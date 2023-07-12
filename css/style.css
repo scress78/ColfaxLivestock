@@ -1,0 +1,499 @@
+/*---------------header*/
+  /*header text and container*/
+h1 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #f44336;
+}
+
+.header h1 {
+	position: absolute;
+	bottom: 25px;
+	float: top;
+	width: 100%;
+	text-shadow: 2px 2px white;
+	transition:0.5s;
+}
+
+
+.header h1:hover{
+	opacity:.9;
+	transition:0.5s;
+}
+
+.header h2 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	color: black;	
+	position: absolute;
+	text-shadow: 2px 2px white;
+	transition:0.5s;
+	opacity: 0.8;	
+} /*header two, Address*/
+
+.header{
+	min-height: 85vh;
+	width:100%;
+	background-image: url("../colfax_images/front5.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+    display: flex;
+    float: top;
+} /*top header container and banner*/
+
+nav{
+	display: flex;s
+	padding: 0% 0%;
+	justify-content: space-between;
+	align-items: right;
+	text-align: right;
+	width: 100%;
+} /*nav properties, possible adjustment for mobile*/
+ 
+ .navbar{
+	flex:1;
+	text-align:right;
+	opacity: 90%;
+	transition: 0.5s;
+	width: 100%
+}
+
+.navbar:hover{
+	opacity: 100%;
+	text-align:right;
+	transition: 0.5s;
+}
+
+.navbar ul li{
+	font-family: 'Roboto Slab', serif;
+	list-style: none;
+	display: inline-block;
+	
+}
+ 
+ .navbar ul li a{
+	color: black;
+	text-decoration: none;
+	opacity:85%;
+	transition:0.5s;
+}
+
+.navbar ul li a:hover{
+	opacity:100%;
+	transition:0.5s;
+}
+
+.navbar ul li a::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+} /*underline animation for header link hover*/
+
+.navbar ul li a:hover::after{
+	width: 100%;
+	opacity: 100%;
+	font-size: 20px;
+}
+
+/*-----------------body elements*/
+body{
+	font-family: 'Roboto Slab', serif;
+	background-image: url('../background/strange_bullseyes.png');
+    background-color: black;
+}
+
+p{
+	font-family: 'Roboto Slab', serif;
+}
+ 
+.container{
+    color: #262228;
+    text-decoration: bold;
+    padding: 0.5em;
+    width: 90%;
+    margin: 1.1em auto;
+    opacity: .65;
+	transition:5.5s;
+	background-color: white;
+	display: flex;
+    justify-content:row;
+    box-shadow: 10px 10px 5px grey;
+} /*central containers */
+
+
+.container:hover {
+	opacity: 1;
+	transition:5.5s;
+	width:95%;
+}
+
+/*desktop maximized*/
+@media screen and (min-width: 1101px){
+	.mobile-header{
+		display:none;
+	}
+	
+	.header h1 {
+		padding: 15px 50px;
+		font-size: 78.5px;
+	}
+	
+	.header h1:hover{
+		padding: 17px 50px;
+		font-size:82.5px;
+	}
+	
+
+	.header h2 {
+		font-size: 30px;
+		bottom: 0px;
+		float: top;
+		width: 100%;
+		padding: 10px 5px;
+	}
+	
+	.header h2:hover{
+		font-size:33px;
+	}
+	
+	.navbar ul li{
+		padding: 2px 12px;
+		position: center;
+		font-size: 30px;
+	}
+	
+	.navbar ul li a{
+		font-size:28px;
+	}
+	
+	.navbar ul li a:hover{
+		font-size:30px;
+	}
+	
+	.navbar ul li a:hover::after{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.navbar ul li{
+		padding: 2px 10px;
+		position: center;
+		font-size: 22px;
+		transition: all .55s ease;
+	}
+		
+	.navbar ul li a{
+		font-size:20px;
+		transition: all .55s ease;
+	}
+	
+	.navbar ul li a:hover{
+		font-size:22px;
+		transition: all .55s ease;
+	}
+}
+
+
+/*desktop smaller/tablet*/
+@media screen and (max-width: 1100px){
+	
+	.mobile-header{
+		display:none;
+	}
+	
+	.header h1{
+		font-size:52.5px;
+		padding:10px 50px;
+	}
+	
+	.header h1:hover{
+		font-size:58.5px;
+		padding:10px 50px;
+	}
+
+	.header h2{
+		font-size: 20px;
+		bottom: 0px;
+		float: top;
+		width: 100%;
+		padding: 10px 5px;
+	}
+	
+	.navbar ul li{
+		padding: 2px 12px;
+		position: center;
+		font-size: 20px;
+	}
+	
+	.navbar ul li a{
+		font-size:18px;
+	}
+	
+	.navbar ul li a:hover{
+		font-size:20px;
+	}
+}
+
+@media screen and (max-width: 895px){
+	.header h1{
+		font-size:40.5px;
+		padding:10px 50px;
+	}
+	
+	.header h1:hover{
+		font-size:42.5px;
+		padding:10px 50px;
+	}
+	
+	
+	.navbar ul li{
+		padding: 2px 10px;
+		position: center;
+		font-size: 15px;
+		transition: all .55s ease;
+	}
+		
+	.navbar ul li a{
+		font-size:13px;
+		transition: all .55s ease;
+	}
+	
+	.navbar ul li a:hover{
+		font-size:15px;
+		transition: all .55s ease;
+	}
+}
+
+
+@media screen and (max-width: 732px) {
+	
+	.header h1{
+		font-size:24px;
+		text-align: center;
+		float: top;
+	}
+	
+	.header h1:hover{
+		font-size:26px;
+	}
+}
+
+
+/*mobile!*/
+@media screen and (max-width: 700px) {
+	#menu-icon{
+		display: none;
+		font-size: 35px;
+		cursor: pointer;
+		z-index: 10001;
+		padding-right: 10px;
+		padding-top: 10px;
+		
+	}
+	
+	.navbar ul li{
+		padding-left: 2px;
+		padding: 2px 2px;
+		position: center;
+		font-size: 15px;
+	}
+	
+	.navbar ul li a{
+		font-size:14x;
+		font-weight: 2000;
+		text-decoration: underline;
+		text-decoration-color: #f44336;
+		transition: 0.5s;
+	}
+	
+	
+	.header{
+		min-height: 50vh;
+		width:100%;
+		background-image: url("../colfax_images/front5.jpg");
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		display: flex;
+		float: top;
+	}
+	
+	
+	.container {
+		opacity: 1;
+		width:90%;
+	}
+	
+	.container:hover {
+		opacity: 1;
+		width:90%;
+	}
+	
+	.adventure_div {
+		margin: 20px 20px;
+		justify-content: center;
+	}
+	
+	.mobile-header{
+		display: block;
+	}
+	
+
+	/*
+	nav .navbar{
+		display:none;
+		width: 100%;
+	}
+	*/
+	
+	/*
+	open/close navbar idea
+	nav .navbar .bx-x{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 300px;
+		height: 60vh;
+		background: #4d9559;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 50px 20px;
+		transition: all .55s ease;
+	}
+	
+	nav .navbar a{
+		display: block;
+		margin-left: 0;
+		margin: 7px 0;
+	}
+	
+	
+	nav .navbar .open{
+		right: 0;
+	}
+	*/
+	
+	
+	
+	
+	h1{
+		font-size:28px;
+		text-align:center;
+		float: top;
+	}
+	
+	
+	.header h1{
+		font-size:24px;
+		text-align:center;
+		float: top;
+	}
+	
+	.header h1:hover{
+		font-size:26px;
+	}
+
+	.header h2{
+		font-size:18px;
+		float: bottom;
+		text-align: center;
+	}
+	
+	.header h2:hover{
+		font-size:20px;
+	}
+	
+	.story-text p{
+		font-size:14px;
+	}
+	
+	.story {
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navbar ul li{
+		padding-left: 2px;
+		padding: 2px 2px;
+		position: center;
+		font-size: 12px;
+	}
+	
+	.navbar ul li a{
+		font-size:10x;
+		font-weight: 2000;
+		text-decoration: underline;
+		text-decoration-color: #f44336;
+		transition: 0.5s;
+	}
+}
+
+/*body*/
+.story{
+    display: flex;
+    float: top;
+}
+
+main{
+    display: flex;
+    justify-content: column;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    
+}
+
+.column1{
+    margin: 0px 20px;
+}
+
+.column2{
+    margin: 0px 10px;
+}
+
+.right {
+    float: right;
+}
+
+
+/*footer*/
+.footer{
+	width: 100%;
+   text-align: center;
+   padding: 30px 0;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+a:visited {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact{
+    float:right;
+	font-weight: bold;
+}
