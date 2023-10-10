@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Colfax Livestock Sales | Contact Us</title>
+    <title>Colfax Livestock Sales | Auctions</title>
     <!--Below is the link to css.. needed to style from a css sheet-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <meta charset="UTG-8">
@@ -16,7 +16,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	
 	<style>
         .container {
@@ -29,23 +29,41 @@
             opacity: 1;
 			transition:5s;
         }
-        
-
-        
 		
-		@media screen and (min-width: 600px) {
-            .adventure_div {
-                padding-right: 30px;
-            }
-
-            
-            .story {
-            
-			
-			width: 80%
-			
-
+		div.scroll-container {
+		  background-color: #333;
+		  overflow: auto;
+		  white-space: nowrap;
+		  padding: 20px;
+		}
+		
+		@media screen and (min-width: 701px) {
+			.home-mobile{
+				display:none; 
+			}
         }
+		
+		@media screen and (max-width: 700px) {
+			.home{
+				display: none;
+			}
+			
+			.livestock-title{
+				font-size: 25px;
+			}
+			
+			.container{
+				opacity: 100%;
+			}
+           
+            .auction {
+				margin-bottom: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				max-height: 800px;
+				max-width: 800px;
+			}
         }
     </style>
 </head>
@@ -82,24 +100,27 @@
     </header>
 	
 	<main>
-        <div class='container'>
+        <div  style="margin-left:7%;margin-right:8%;margin-top:25px; width:85%;" class='container'>
             
 			<div class='home'>
-				<h1 style='text-decoration:underline;text-align:center;padding-bottom:10px;'>Contact Us</h1>
-				<ul style="float:left;list-style:none;padding-right:20px;">
-					<li style="padding-bottom:10px;"><i class="fa fa-user-o"> Dr. Sarah Myers, DVM</i></li>
-					<li style="padding-bottom:10px;"><i class="fa fa-home"> 335 N Walnut St. Colfax, IA 50054</i></li>
-					<li style="padding-bottom:10px;"><i class="fa fa-phone"> <a href="tel:515-674-3561"> (515) 674-3561 </a></i></li>
-					<li style="padding-bottom:10px;"><i class="fa fa-envelope"> drsarahmyersdvm@gmail.com</i></li>
-					<li style="padding-bottom:10px;"><i class="fa fa-facebook">  <a href="https://www.facebook.com/profile.php?id=111983648865257&paipv=0&eav=AfbFu61PGoayGq5epits46AbEFpR3AQApP8cn2yW_WH7h-6Nsmv4u5NVz0RwJL6Y1YY&_rdr">Colfax Livestock Sales</a></i></li>
-				</ul>
-				<iframe  <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11918.880333409259!2d-93.25468208008766!3d41.68338838551186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87eee5774eeba96d%3A0xe5e1e3a472c6cf75!2sColfax%20Livestock%20Sales%20Co!5e0!3m2!1sen!2sus!4v1686693137396!5m2!1sen!2sus"
-				width="95%" 
-				height="450" 
-				style="border:0; margin-left:3%; margin-right:5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+				<h1 class="livestock-title" style=''>Livestock Sales Saturdays</h1>
+				<h1 class="livestock-title" style='margin-bottom: 20px;'>10am-2pm!</h1>
 				
+				<div>
+					<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/auctionblock1.jpg">
+					<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/donkey.jpg">
+					<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/inside1.jpg">
+				</div>
+            </div>
+			
+			<div class='home-mobile'>
+				<h1 class="livestock-title" style=''>Livestock Sales Saturdays</h1>
+				<h1 class="livestock-title" style='margin-bottom: 20px;'>10am-2pm!</h1>
 				
-			</div>
+				<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/auctionblock1.jpg">
+				<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/donkey.jpg">
+				<img style="width:90%; margin-left: auto; margin-right: auto; padding-left: 50px; padding-bottom: 10px;" src="colfax_images/inside1.jpg">
+            </div>
         </div>
             
     </main>
@@ -109,6 +130,7 @@
 		<p style="margin:0">335 N Walnut St. Colfax, IA  |  (515) 674-3561</p>
 			
     </section>
+	
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
